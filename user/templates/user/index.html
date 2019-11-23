@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <!--分支-->
+    {% if is_login %}
+        欢迎　{{ username }} <a href="/user/logout">退出</a>
+    {% else %}
+        请您先进行登录　<a href="/user/login">登录</a>
+    {% endif %}
+
+</body>
+</html>
